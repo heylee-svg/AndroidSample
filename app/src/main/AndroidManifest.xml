@@ -2,26 +2,69 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.BIND_REMOTED_AIDL_SERVICE" />
+    <uses-permission android:name="android.permission.BIND_JOB_SERVICE"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/alert_dialog_icon"
-        android:label="@string/task_name"
+        android:label="Service"
         android:roundIcon="@drawable/alert_dialog_icon"
         android:supportsRtl="true"
-        android:theme="@style/CustomTheme"
+        android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
             android:name="com.example.android.apis.sample.MainActivity"
             android:exported="true"
             android:label="@string/task_name"
-            android:theme="@style/CustomTheme">
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".service.Binding"
+            android:exported="true"
+            android:label="@string/task_name"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity
+            android:name=".service.BindingOptions"
+            android:exported="true"
+            android:label="@string/task_name"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity
+            android:name=".service.Controller"
+            android:exported="true"
+            android:label="@string/task_name"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity
+            android:name=".service.JobWorkServiceActivity"
+            android:exported="true"
+            android:label="@string/task_name"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity
+            android:name=".service.MessengerServiceActivities"
+            android:exported="true"
+            android:label="@string/task_name"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <service android:name=".service.MessengerService"/>
+        <service android:name=".service.RemoteService"/>
+        <service android:name=".service.IsolatedService"/>
+        <service android:name=".service.JobWorkService"/>
+        <service android:name=".service.MessengerService"/>
+        <service android:name=".service.NotificationBackgroundService"/>
     </application>
 
 </manifest>

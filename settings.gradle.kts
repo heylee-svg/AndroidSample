@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidSample"
 include(":app")
- 
+include(":google-library")

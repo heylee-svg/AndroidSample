@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/binding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Binding" />
+
+    <Button
+        android:id="@+id/bing_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="BindingOptions" />
+
+    <Button
+        android:id="@+id/controller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Controller" />
+
+    <Button
+        android:id="@+id/job_work_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="JobWorkService" />
+
+    <Button
+        android:id="@+id/message_service_activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="MessageServiceActivities" />
+</LinearLayout>

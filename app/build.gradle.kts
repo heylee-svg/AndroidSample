@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.android.apis"
+    namespace = "com.example.android.apis.sample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.android.apis"
+        applicationId = "com.example.android.apis.sample"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -52,6 +52,7 @@ android {
 
 dependencies {
 
+    implementation(project(":google-library"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.appcompat)
